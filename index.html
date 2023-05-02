@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fontawesome.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Products List</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Shop now</h1>
+    </header>
+    <!-- MAIN PART -->
+    <main>
+      <section class="filtersContainer">
+        <div id="buttonsContainer">
+          <button
+            id="allProducts"
+            class="generalStyleButtons generalStyleButtons--filter"
+          >
+            All Products
+          </button>
+          <button
+            id="fruitandvegetable"
+            class="generalStyleButtons generalStyleButtons--filter"
+          >
+            Fruit & Vegetable
+          </button>
+          <button
+            id="bakery"
+            class="generalStyleButtons generalStyleButtons--filter"
+          >
+            Bakery
+          </button>
+          <button
+            id="dairy"
+            class="generalStyleButtons generalStyleButtons--filter"
+          >
+            Dairy
+          </button>
+        </div>
+
+        <div class="searchByNameContainer">
+          <input
+            type="text"
+            placeholder="Search for"
+            class="searchByNameField"
+          />
+          <button
+            id="searchButton"
+            class="generalStyleButtons generalStyleButtons--searchByNameButton"
+          >
+            <img src="./src/img/search.png" alt="lupa" />
+          </button>
+        </div>
+      </section>
+      <!-- CAR AND PRODUCTS CONTAINER -->
+      <div id="mainContainer">
+        <section class="showcaseContainer">
+          <div class="productsListContainer">
+            <ul id="productsContainer"></ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="car">
+            <div class="carBorder">
+              <img src="./img/car-icon.png" alt="" />
+              <h2>Car</h2>
+            </div>
+            <ul id="containerCart">
+              <div class="emptyCar">
+                <p id="addItens">
+                  You currently have no products in your cart.
+                </p>
+              </div>
+            </ul>
+            <div>
+              <p id="quantity">Quantity: 0</p>
+              <p id="total">Total: R$ 0,00</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./src/js/productsData.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

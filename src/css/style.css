@@ -1,0 +1,266 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  padding: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+}
+
+/* FILTERS */
+
+.filtersContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.filtersContainer {
+  flex-wrap: wrap;
+}
+
+#buttonsContainer {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  #buttonsContainer {
+    overflow-x: scroll;
+  }
+}
+
+.generalStyleButtons {
+  border: 1.5px solid rgba(18, 184, 134, 0.05);
+  background: rgba(18, 184, 134, 0.05);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #12b886;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.generalStyleButtons--filter:hover {
+  background-color: #12b886;
+  color: #ffffff;
+  transition: ease-in-out 0.2s;
+}
+
+.searchByNameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchByNameField {
+  border: none;
+  padding: 0 10px;
+  background: #f1f3f5;
+  border-radius: 8px;
+  margin-right: 5px;
+  width: 250px;
+  color: #515252;
+  font-weight: 400;
+}
+
+.generalStyleButtons--searchByNameButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  background: #12b886;
+  border: 1.5px solid #12b886;
+  border-radius: 8px;
+}
+
+/* TOTAL PRICE */
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  .priceContainer {
+    display: none;
+  }
+}
+
+.priceContainer div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.priceContainer div img {
+  width: 2rem;
+}
+
+.priceContainer span {
+  background-color: #212529;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* SHOWCASE CONTAINER */
+
+.showcaseContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  border-radius: 50px 0;
+}
+
+/* PRODUCTS CONTAINER */
+
+.productsListContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.productsListContainer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 90%;
+}
+
+@media (max-width: 600px) {
+  .productsListContainer ul {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+}
+
+.productsListContainer ul li {
+  border-radius: 8px;
+  transition: ease-in-out 0.1s;
+  min-width: 300px;
+  margin: 0 10px 30px 10px;
+}
+
+.productsListContainer ul li:hover {
+  box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.productsListContainer ul li img {
+  width: 100%;
+}
+
+.productsListContainer ul li h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0 15px;
+  color: #212529;
+}
+
+.productsListContainer ul li p {
+  font-size: 0.7rem;
+  color: #868e96;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.productsListContainer ul li span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  color: #212529;
+}
+.productsListContainer ul li ol {
+  list-style: decimal;
+  color: #868e96;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.productsListContainer ul li ol li {
+  margin: 0;
+  width: 100%;
+}
+.productsListContainer ul li button {
+  background-color: #12b8860d;
+  border-radius: 8px;
+  border: #12b8860d 1px solid;
+  color: #12b886;
+  padding: 5px;
+  transition: 0.5s;
+}
+.productsListContainer ul li button:hover {
+  background-color: #12b886;
+  border: #12b886 1px solid;
+  color: white;
+}
+.productsListContainer ul li div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+#mainContainer {
+  width: 100vw;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media (max-width: 845px) {
+  #mainContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.carBorder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 50.75px;
+  background: #12b886;
+  border-radius: 12px 12px 0px 0px;
+  border: 100px;
+}
+
+@media (max-width: 845px) {
+  #carBorder {
+    min-width: 350px;
+  }
+}
+
+#containerCart {
+  height: 500px;
+  overflow-y: auto;
+}
+
+.carImg {
+  height: 70px;
+  width: 70px;
+}
+
+.imgCard {
+  width: 270px;
+}
+
+.carLi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
